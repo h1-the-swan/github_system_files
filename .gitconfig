@@ -1,0 +1,7 @@
+#  To use this .gitconfig create a symlink to it in the home directory
+#  ln -s ~/github_system_files/.gitconfig ~/.gitconfig
+#  
+[user]
+	email = jason.portenoy@gmail.com
+[alias]
+	co = checkout
