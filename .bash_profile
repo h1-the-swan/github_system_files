@@ -52,3 +52,16 @@ PS1="\h:\w$RED \$(parse_git_branch)$NO_COLOR $ "
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+
+
+# Alias to start a localhost http server in the current working directory:
+function httpserver() { 
+    http-server || 
+    {
+	    echo "http-server could not be run. Do you have node.js and http-server installed? Tyring Python's SimpleHTTPServer instead" ;
+	    python -m SimpleHTTPServer; 
+    }
+}
+export -f httpserver
+
